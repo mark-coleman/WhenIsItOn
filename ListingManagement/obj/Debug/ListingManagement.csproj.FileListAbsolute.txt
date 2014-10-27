@@ -1,0 +1,7 @@
+C:\Code\Projects\WhenIsItOn\ListingManagement\bin\Debug\ListingManagement.dll
+C:\Code\Projects\WhenIsItOn\ListingManagement\bin\Debug\ListingManagement.pdb
+C:\Code\Projects\WhenIsItOn\ListingManagement\bin\Debug\Entities.dll
+C:\Code\Projects\WhenIsItOn\ListingManagement\bin\Debug\Entities.pdb
+C:\Code\Projects\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.dll
+C:\Code\Projects\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.pdb
+C:\Code\Projects\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.csprojResolveAssemblyReference.cache

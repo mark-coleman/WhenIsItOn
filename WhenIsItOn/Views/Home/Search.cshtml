@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Entities.ListingSearchResult>
+
+@{
+    ViewBag.Title = "Search results";
+    int matches = Model.Count();
+}
+
+<h1>So...when is it on?</h1>
+
+@if (matches > 0)
+{
+    <p class="lead">Found @matches matches for <b>@ViewBag.SearchText</b>...&nbsp;@Html.ActionLink("New search", "Index", "Home", new { @class = "btn btn-primary btn-lg" })</p>
+    
+    <br />
+
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title Name</th>
+                    <th>Channel</th>
+                    <th>Start Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var listing in Model)
+                {
+                    <tr>
+                        <td>@listing.Title</td>
+                        <td>@listing.ChannelName</td>
+                        <td>@listing.DisplayStartDateTime</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br />
+        @Html.ActionLink("New search", "Index", "Home", new { @class = "btn btn-primary btn-lg" })
+    </div>
+}
+else
+{
+<p>Sorry, no matching items found. However if you add your email address below we'll notify you when '@ViewBag.SearchText' is next on TV.</p>
+}
+
+

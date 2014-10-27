@@ -1,0 +1,7 @@
+C:\Code\Projects\WhenIsItOn\DataManagement\bin\Debug\DataManagement.dll
+C:\Code\Projects\WhenIsItOn\DataManagement\bin\Debug\DataManagement.pdb
+C:\Code\Projects\WhenIsItOn\DataManagement\bin\Debug\Entities.dll
+C:\Code\Projects\WhenIsItOn\DataManagement\bin\Debug\Entities.pdb
+C:\Code\Projects\WhenIsItOn\DataManagement\obj\Debug\DataManagement.csprojResolveAssemblyReference.cache
+C:\Code\Projects\WhenIsItOn\DataManagement\obj\Debug\DataManagement.dll
+C:\Code\Projects\WhenIsItOn\DataManagement\obj\Debug\DataManagement.pdb

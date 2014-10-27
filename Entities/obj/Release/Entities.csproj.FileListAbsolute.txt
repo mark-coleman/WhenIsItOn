@@ -1,0 +1,4 @@
+C:\Code\Projects\WhenIsItOn\Entities\bin\Release\Entities.dll
+C:\Code\Projects\WhenIsItOn\Entities\bin\Release\Entities.pdb
+C:\Code\Projects\WhenIsItOn\Entities\obj\Release\Entities.dll
+C:\Code\Projects\WhenIsItOn\Entities\obj\Release\Entities.pdb

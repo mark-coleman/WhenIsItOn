@@ -1,0 +1,4 @@
+C:\Code\Projects\WhenIsItOn\Entities\bin\Debug\Entities.dll
+C:\Code\Projects\WhenIsItOn\Entities\bin\Debug\Entities.pdb
+C:\Code\Projects\WhenIsItOn\Entities\obj\Debug\Entities.dll
+C:\Code\Projects\WhenIsItOn\Entities\obj\Debug\Entities.pdb
