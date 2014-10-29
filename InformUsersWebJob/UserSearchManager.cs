@@ -44,7 +44,13 @@ namespace InformUsersWebJob
             if (progs.Count > 0)
             {
                 NotifyUser(userSearch, progs);
+                DeleteUserSearch(userSearch);
             }
+        }
+
+        private void DeleteUserSearch(Entities.UserSearch userSearch)
+        {
+            dataStore.DeleteUserSearch(userSearch);
         }
 
         private void NotifyUser(Entities.UserSearch userSearch, IList<Entities.ListingSearchResult> progs)

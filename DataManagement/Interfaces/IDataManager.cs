@@ -11,5 +11,6 @@ namespace DataManagement.Interfaces
         IList<string> GetTitles();
         void SaveUserSearch(string listingName, string emailAddress);
         IList<UserSearch> GetUserSearches();
+        void DeleteUserSearch(UserSearch userSearch);
     }
 }

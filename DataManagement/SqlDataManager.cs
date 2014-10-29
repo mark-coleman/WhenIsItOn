@@ -61,6 +61,11 @@ namespace DataManagement
             throw new NotImplementedException();
         }
 
+        public void DeleteUserSearch(UserSearch userSearch)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private static void SaveChannel(Channel channel)

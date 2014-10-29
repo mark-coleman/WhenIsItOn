@@ -10,6 +10,7 @@ using System.Configuration;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver.Linq;
 using Common.Extensions;
+using MongoDB.Driver.Builders;
 
 namespace DataManagement
 {
@@ -74,6 +75,14 @@ namespace DataManagement
                                                 ProgrammeName = u.ProgrammeName,
                                                 Email = u.Email
                                             }).ToList<Entities.UserSearch>();
+        }
+
+        public void DeleteUserSearch(Entities.UserSearch userSearch)
+        {
+            var searches = GetUserSearchCollection();
+            var q = Query<Entities.UserSearch>.Where(u => u.Email == userSearch.Email 
+                                            && u.ProgrammeName == userSearch.ProgrammeName);
+            searches.Remove(q);
         }
 
         #endregion
