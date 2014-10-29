@@ -13,3 +13,4 @@ C:\Code\Projects\WhenIsItOn\InformUsersWebJob\bin\Release\MongoDB.Bson.xml
 C:\Code\Projects\WhenIsItOn\InformUsersWebJob\bin\Release\MongoDB.Driver.xml
 C:\Code\Projects\WhenIsItOn\InformUsersWebJob\obj\Release\InformUsersWebJob.exe
 C:\Code\Projects\WhenIsItOn\InformUsersWebJob\obj\Release\InformUsersWebJob.pdb
+C:\Code\Projects\WhenIsItOn\InformUsersWebJob\obj\Release\InformUsersWebJob.csprojResolveAssemblyReference.cache
