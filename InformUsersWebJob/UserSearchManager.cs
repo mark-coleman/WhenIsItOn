@@ -24,6 +24,11 @@ namespace InformUsersWebJob
 
         public UserSearchManager(INotifier notificationManager, IDataManager dataManager)
         {
+            if (notifier == null)
+                throw new ArgumentNullException("notifier");
+            if (dataManager == null)
+                throw new ArgumentNullException("dataManager");
+
             notifier = notificationManager;
             dataStore = dataManager;
         }

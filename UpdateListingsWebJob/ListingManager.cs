@@ -13,18 +13,28 @@ namespace UpdateListingsWebJob
     {
         private IListingRetriever listingRetriever;
         private IDataManager dataStore;
+        private INotifier notificationManager;
 
         public ListingManager()
         {
             listingRetriever = new XmlTvListingRetriever();
             dataStore = new MongoDataManager();
             //dataStore = new SqlDataManager();
+            notificationManager = new EmailNotifier();
         }
 
-        public ListingManager(IListingRetriever retriever, IDataManager dataManager)
+        public ListingManager(IListingRetriever retriever, IDataManager dataManager, INotifier notifier)
         {
+            if (retriever == null)
+                throw new ArgumentNullException("retriever");
+            if (dataManager == null)
+                throw new ArgumentNullException("dataManager");
+            if (notifier == null)
+                throw new ArgumentNullException("notifier");
+
             listingRetriever = retriever;
             dataStore = dataManager;
+            notificationManager = notifier;
         }
 
         public void UpdateListings()
@@ -53,11 +63,11 @@ namespace UpdateListingsWebJob
             }
         }
 
-        private static void SendSuccessNotification()
+        private void SendSuccessNotification()
         {
             try
             {
-                SendEmail("Listing data has been successfully updated.");
+                SendNotification("Listing data has been successfully updated.");
             }
             catch (Exception ex)
             {
@@ -65,11 +75,11 @@ namespace UpdateListingsWebJob
             }
         }
 
-        private static void SendErrorNotification(Exception error)
+        private void SendErrorNotification(Exception error)
         {
             try
             {
-                SendEmail(string.Format("Listing data update failed: {0}.", error.ToString()));
+                SendNotification(string.Format("Listing data update failed: {0}.", error.ToString()));
             }
             catch (Exception ex)
             {
@@ -77,9 +87,9 @@ namespace UpdateListingsWebJob
             }
         }
 
-        private static void SendEmail(string text)
+        private void SendNotification(string text)
         {
-            new EmailNotifier().SendNotification("WhenIsItOn Listing Update Notification",
+            notificationManager.SendNotification("WhenIsItOn Listing Update Notification",
                                                  text,
                                                  new List<string>() { "markcoleman157@gmail.com" });
         }

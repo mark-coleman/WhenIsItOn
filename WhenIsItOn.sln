@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateListingsWebJob", "Upd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InformUsersWebJob", "InformUsersWebJob\InformUsersWebJob.csproj", "{1CA6DDFD-DAC4-45C0-90E0-1ECC57396A01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenIsItOn.UnitTests", "WhenIsItOn.UnitTests\WhenIsItOn.UnitTests.csproj", "{53FC5365-471C-4319-8619-6A41F296DF89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{1CA6DDFD-DAC4-45C0-90E0-1ECC57396A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CA6DDFD-DAC4-45C0-90E0-1ECC57396A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CA6DDFD-DAC4-45C0-90E0-1ECC57396A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53FC5365-471C-4319-8619-6A41F296DF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53FC5365-471C-4319-8619-6A41F296DF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53FC5365-471C-4319-8619-6A41F296DF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53FC5365-471C-4319-8619-6A41F296DF89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
