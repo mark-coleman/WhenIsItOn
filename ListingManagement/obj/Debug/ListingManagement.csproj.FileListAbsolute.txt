@@ -5,3 +5,12 @@ C:\Code\Projects\WhenIsItOn\ListingManagement\bin\Debug\Entities.pdb
 C:\Code\Projects\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.dll
 C:\Code\Projects\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.pdb
 C:\Code\Projects\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.csprojResolveAssemblyReference.cache
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\bin\Debug\ListingManagement.dll
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\bin\Debug\ListingManagement.pdb
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\bin\Debug\Common.dll
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\bin\Debug\SendGridMail.dll
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\bin\Debug\SendGrid.SmtpApi.dll
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\bin\Debug\Common.pdb
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.csprojResolveAssemblyReference.cache
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.dll
+C:\Code\WhenIsItOn\WhenIsItOn\ListingManagement\obj\Debug\ListingManagement.pdb

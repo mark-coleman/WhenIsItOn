@@ -11,6 +11,7 @@ using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Driver.Linq;
 using Common.Extensions;
 using MongoDB.Driver.Builders;
+using Common;
 
 namespace DataManagement
 {
@@ -26,13 +27,20 @@ namespace DataManagement
 
         public void SaveListings(Entities.Listings listings)
         {
-            Parallel.ForEach(listings.Channels, channel =>
+            using (new Tracer("MongoDataManager.SaveListings"))
+            {
+                List<Programme> programmes = new List<Programme>();
+
+                Tracer.WriteLine("Saving listings...");
+                foreach (var channel in listings.Channels)
                 {
-                    Parallel.ForEach(channel.Programmes, programme =>
+                    foreach (var programme in channel.Programmes)
                     {
-                        SaveProgramme(programme, channel);
-                    });
-                });
+                        programmes.Add(new Programme(programme, channel));
+                    }
+                }
+                SaveProgrammes(programmes);
+            }
         }
 
         public IList<Entities.ListingSearchResult> FindListing(string listingName)
@@ -89,10 +97,10 @@ namespace DataManagement
 
         #region Private Functions
 
-        private void SaveProgramme(Entities.Programme programme, Entities.Channel channel)
+        private void SaveProgrammes(List<Programme> programmes)
         {
             var progs = GetProgrammeCollection();
-            progs.Insert(new Programme(programme, channel));
+            progs.InsertBatch<Programme>(programmes);
         }
 
         private static string GetConnectionString()

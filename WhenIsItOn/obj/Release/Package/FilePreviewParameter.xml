@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <parameter name="IIS Web Application Name" description="" value="whenisiton" tags="IisApp">
-    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Code\\Projects\\WhenIsItOn\\WhenIsItOn\\obj\\Release\\Package\\PackageTmp$" />
-    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Code\\Projects\\WhenIsItOn\\WhenIsItOn\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Code\\WhenIsItOn\\WhenIsItOn\\WhenIsItOn\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Code\\WhenIsItOn\\WhenIsItOn\\WhenIsItOn\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="WhenIsItOn-Web.config Connection String" description="" value="mongodb://whenisiton1:megadeth1@ds045087.mongolab.com:45087/WhenIsItOn" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Code\\WhenIsItOn\\WhenIsItOn\\WhenIsItOn\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WhenIsItOn']/@connectionString" />
+  </parameter>
+  <parameter name="WhenIsItOnLocal-Web.config Connection String" description="WhenIsItOnLocal Connection String used in web.config by the application to access the database." value="mongodb://localhost" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Code\\WhenIsItOn\\WhenIsItOn\\WhenIsItOn\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='WhenIsItOnLocal']/@connectionString" />
   </parameter>
 </parameters>

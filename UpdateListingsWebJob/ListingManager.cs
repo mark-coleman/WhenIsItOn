@@ -20,7 +20,7 @@ namespace UpdateListingsWebJob
             listingRetriever = new XmlTvListingRetriever();
             dataStore = new MongoDataManager();
             //dataStore = new SqlDataManager();
-            notificationManager = new EmailNotifier();
+            notificationManager = new EmailNotifier(); 
         }
 
         public ListingManager(IListingRetriever retriever, IDataManager dataManager, INotifier notifier)
@@ -49,6 +49,7 @@ namespace UpdateListingsWebJob
                     Listings listings = listingRetriever.GetListings();
                     Tracer.WriteLine(string.Format("Retrieved listings"));
 
+                    Tracer.WriteLine(string.Format("Saving listings for {0} channels...", listings.Channels.Count));
                     dataStore.SaveListings(listings);
                     Tracer.WriteLine(string.Format("Saved listings for {0} channels", listings.Channels.Count));
 
