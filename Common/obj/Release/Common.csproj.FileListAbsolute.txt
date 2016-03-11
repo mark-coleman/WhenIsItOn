@@ -10,3 +10,4 @@ C:\Code\WhenIsItOn\WhenIsItOn\Common\bin\Release\SendGrid.SmtpApi.dll
 C:\Code\WhenIsItOn\WhenIsItOn\Common\bin\Release\SendGridMail.dll
 C:\Code\WhenIsItOn\WhenIsItOn\Common\obj\Release\Common.dll
 C:\Code\WhenIsItOn\WhenIsItOn\Common\obj\Release\Common.pdb
+C:\Code\WhenIsItOn\WhenIsItOn\Common\obj\Release\Common.csprojResolveAssemblyReference.cache

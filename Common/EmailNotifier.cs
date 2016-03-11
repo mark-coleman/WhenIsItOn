@@ -4,6 +4,7 @@ using System.Net.Mail;
 using SendGrid;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace Common
 {
@@ -36,8 +37,8 @@ namespace Common
 
         private static NetworkCredential CreateAuthenticationToken()
         {
-            var username = "azure_f7c7043b8d6152b4ce5b7737e9945c3b@azure.com";
-            var pswd = "1fDI8rJn18RkK6l";
+            var username = ConfigurationManager.AppSettings["emailUsername"];
+            var pswd = ConfigurationManager.AppSettings["emailPassword"];
 
             return new NetworkCredential(username, pswd);
         }

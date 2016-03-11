@@ -48,13 +48,11 @@ namespace WhenIsItOn.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
             return View();
         }
 
@@ -79,15 +77,5 @@ namespace WhenIsItOn.Controllers
 
             return regex.IsMatch(email);
         }
-        /*
-        protected override void OnActionExecuting(ActionExecutingContext filterContext)
-        {
-            ActionDescriptor actionDescriptor = filterContext.ActionDescriptor;
-            string actionName = actionDescriptor.ActionName;
-            string controllerName = actionDescriptor.ControllerDescriptor.ControllerName;
-            // Now that you have the values, set them somewhere and pass them down with your ViewModel
-            // This will keep your view cleaner and the controller will take care of everything that the view needs to do it's job.
-        }
-         */ 
     }
 }
